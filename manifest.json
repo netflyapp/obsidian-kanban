@@ -1,11 +1,11 @@
 {
 	"id": "obsidian-kanban",
 	"name": "Kanban",
-	"version": "2.0.51",
+	"version": "2.1.0",
 	"minAppVersion": "1.0.0",
-	"description": "Create markdown-backed Kanban boards in Obsidian.",
-	"author": "mgmeyers",
-	"authorUrl": "https://github.com/mgmeyers/obsidian-kanban",
+	"description": "Create markdown-backed Kanban boards in Obsidian. This fork adds a calendar view (month + week with hour grid) with drag-and-drop scheduling.",
+	"author": "Miłosz Zając (Netfly.pl) — fork of mgmeyers' obsidian-kanban",
+	"authorUrl": "https://github.com/netflyapp/obsidian-kanban",
 	"helpUrl": "https://publish.obsidian.md/kanban/Obsidian+Kanban+Plugin",
 	"isDesktopOnly": false
 }

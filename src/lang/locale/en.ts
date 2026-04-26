@@ -16,6 +16,15 @@ const en = {
   'View as board': 'View as board',
   'View as list': 'View as list',
   'View as table': 'View as table',
+  'View as calendar': 'View as calendar',
+  Month: 'Month',
+  Week: 'Week',
+  Previous: 'Previous',
+  Next: 'Next',
+  Unscheduled: 'Unscheduled',
+  Lane: 'Lane',
+  Time: 'Time',
+  'Clear time': 'Clear time',
   'Board view': 'Board view',
 
   // KanbanView.tsx

@@ -47,7 +47,7 @@ import { cleanUpTagSortSettings, renderTagSortSettings } from './settings/TagSor
 
 const numberRegEx = /^\d+(?:\.\d+)?$/;
 
-export type KanbanFormat = 'basic' | 'board' | 'table' | 'list';
+export type KanbanFormat = 'basic' | 'board' | 'table' | 'list' | 'calendar';
 
 export interface KanbanSettings {
   [frontmatterKey]?: KanbanFormat;

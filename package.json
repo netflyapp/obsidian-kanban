@@ -1,7 +1,7 @@
 {
   "name": "obsidian-kanban",
-  "version": "2.0.51",
-  "description": "This is a sample plugin for Obsidian (https://obsidian.md)",
+  "version": "2.1.0",
+  "description": "Kanban boards for Obsidian with calendar view (month/week, hour grid, drag-and-drop). Fork of mgmeyers/obsidian-kanban.",
   "main": "main.js",
   "scripts": {
     "typecheck": "tsc --noemit",
@@ -15,9 +15,13 @@
     "bump": "node version-bump.mjs && git add package.json manifest.json versions.json && yarn rlnotes",
     "release": "git commit -m $npm_package_version && git tag $npm_package_version && git push && git push --tags"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
+  "keywords": ["obsidian", "kanban", "calendar", "obsidian-plugin"],
+  "author": "Miłosz Zając (Netfly.pl)",
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netflyapp/obsidian-kanban.git"
+  },
   "devDependencies": {
     "@codemirror/commands": "^6.0.0",
     "@codemirror/state": "^6.0.0",

@@ -15,3 +15,8 @@ dist
 test-vault/
 main.js
 styles.css
+
+# local Obsidian vault used for testing
+.obsidian/
+Untitled Kanban.md
+sdfsd.md

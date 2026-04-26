@@ -17,6 +17,7 @@ import { frontmatterKey } from '../parsers/common';
 import { Icon } from './Icon/Icon';
 import { Lanes } from './Lane/Lane';
 import { LaneForm } from './Lane/LaneForm';
+import { CalendarView } from './Calendar/Calendar';
 import { TableView } from './Table/Table';
 import { KanbanContext, SearchContext } from './context';
 import { baseClassName, c, useSearchValue } from './helpers';
@@ -223,7 +224,7 @@ export const Kanban = ({ view, stateManager }: KanbanProps) => {
               },
               ...getCSSClass(boardData.data.frontmatter),
             ])}
-            {...html5DragHandlers}
+            {...(boardView === 'calendar' ? {} : html5DragHandlers)}
           >
             {(isLaneFormVisible || boardData.children.length === 0) && (
               <LaneForm onNewLane={onNewLane} closeLaneForm={closeLaneForm} />
@@ -263,6 +264,8 @@ export const Kanban = ({ view, stateManager }: KanbanProps) => {
             )}
             {boardView === 'table' ? (
               <TableView boardData={boardData} stateManager={stateManager} />
+            ) : boardView === 'calendar' ? (
+              <CalendarView boardData={boardData} stateManager={stateManager} />
             ) : (
               <ScrollContainer
                 id={view.id}
